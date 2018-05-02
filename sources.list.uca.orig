@@ -1,0 +1,36 @@
+## Source List para os UCA's da EMPOO
+## Autor: Danilo Rodrigues César
+##
+
+deb http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu trusty partner
+deb http://extras.ubuntu.com/ubuntu trusty main
+
+
+# deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
+# deb-src http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
+# deb-src http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
+# deb-src http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
+# deb-src http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+# deb-src http://archive.canonical.com/ubuntu trusty partner
+# deb-src http://extras.ubuntu.com/ubuntu trusty main
+
+
+##LIBREOFFICE-5.x.x
+deb http://ppa.launchpad.net/libreoffice/ppa/ubuntu trusty main
+# deb-src http://ppa.launchpad.net/libreoffice/ppa/ubuntu trusty main
+
+##JAVA
+deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+# deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+
+
+##S4A
+deb http://ppa.launchpad.net/llxdev/trusty/ubuntu trusty main
+
+##Gnoduino
+deb http://ppa.launchpad.net/pmjdebruijn/gnoduino-release/ubuntu trusty main

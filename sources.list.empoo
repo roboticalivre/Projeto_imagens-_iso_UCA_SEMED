@@ -1,0 +1,35 @@
+## Source List para os UCA's da EMPOO
+## Autor: Danilo Rodrigues César
+##
+
+deb http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
+deb http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
+deb http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
+deb http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
+deb http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+deb http://empoo.dlinkddns.com/ubuntu/mirror/archive.canonical.com/ubuntu trusty partner
+deb http://empoo.dlinkddns.com/ubuntu/mirror/extras.ubuntu.com/ubuntu trusty main
+
+
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/archive.canonical.com/ubuntu trusty partner
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/extras.ubuntu.com/ubuntu trusty main
+
+
+##LIBREOFFICE-5.x.x
+deb http://empoo.dlinkddns.com/ubuntu/mirror/ppa.launchpad.net/libreoffice/ppa/ubuntu trusty main
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/ppa.launchpad.net/libreoffice/ppa/ubuntu trusty main
+
+##JAVA
+deb http://empoo.dlinkddns.com/ubuntu/mirror/ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+# deb-src http://empoo.dlinkddns.com/ubuntu/mirror/ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+
+##S4A
+deb http://ppa.launchpad.net/llxdev/trusty/ubuntu trusty main
+
+##Gnoduino
+deb http://ppa.launchpad.net/pmjdebruijn/gnoduino-release/ubuntu trusty main
