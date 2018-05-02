@@ -1,0 +1,37 @@
+﻿
+1o - Execute todos os comandos como usuário root
+
+sudo fdisk -l (Para mostrar qual é o dispositivo - /dev/sdx)
+e depois,
+sudo cfdisk /dev/sdx (Lembre de trocar x pelo dispositivo correto).
+
+Se retornar algum tipo erro. Faça o seguinte:
+
+sudo cfdisk -z /dev/sdx (Lembre de trocar x pelo dispositivo correto). A opção "-z", permite que seja criada uma tabela de partições vazia manualmente.
+
+Agora, vá até a opção "New", escolha "Primary" e pressione "Enter" para indicar que será utilizado todo o espaço do pendrive.
+
+Depois da partição criada, vá até a opção "Type" e digite "b" (sem as aspas). A opção "b" determina que a partição seja do tipo FAT32. Pressione "Enter".
+
+Agora, vá para opção "Write" e digite "yes" para gravar. Vá para a opção "Quit" para sair. Pressione "Enter".
+
+Agora o pendrive está com a tabela de partições correta. 
+
+
+2o - Formate o pendrive com o seguinte comando (não esqueça de executá-lo como usuário root):
+
+sudo mkfs.vfat -c -v -n label /dev/sdx1 (Lembre de trocar x pelo dispositivo correto).
+
+A opção "-c" verifica a presença de blocos com defeito, a "-v" mostra os detalhes da execução do comando e a "-n" é atribuído um label (dê um nome) para o pendrive.  
+O tempo de formatação pode ser demorado. Vai depender do tamnaho do pendrive. Depois de formatado é só utilizá-lo de forma segura. 
+
+Obs.: 
+- Você pode - zerar - acrescentar o número zero em todos os endereços de memória do pendrive antes de usar o "mkfs.vfat". Utilize o comando "dd if=/dev/zero of=/dev/sdx".
+- Tome cuidado com pendrives falsificados (pendrives que não possuem a quantidade de memória especificada). O pendrive a partir de uma quantidade de bytes gravados começa a perder as informações, pois ele recomeça a gravar por cima das gravações iniciais. Detalhes em: http://oss.digirati.com.br/f3/ (inclui aplicativos para testar o pendrive).
+- Apague seu pendrive e não deixe vestígios. Utilize o comando "shred -n 3 -z /dev/sdx" (Lembre de trocar x pelo dispositivo correto). A opção "-n 3" significa que apenas três(3) gravações consecutivas e com diferentes padrões magnéticos (as gravações consecutivas, por default, são de 25 vezes) serão feitas, a "-z" significa que a última gravação será com zeros, ou seja, grava com o número zero em todos os endereços de memória do pendrive, inclusive o MBR.
+
+
+
+
+Danilo Rodrigues César
+Texto disponibilizado sob a Licença GPL.
